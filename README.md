@@ -1,7 +1,0 @@
-# Starter Web 
-
-## Introduction
-
-## Technology
-
- 

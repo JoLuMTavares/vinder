@@ -1,0 +1,295 @@
+  PID TTY STAT TIME COMMAND
+    1 ?  Ss 0:01 /sbin/init splash
+    2 ?  S 0:00 [kthreadd]
+    4 ?  S< 0:00 [kworker/0:0H]
+    6 ?  S< 0:00 [mm_percpu_wq]
+    7 ?  S 0:00 [ksoftirqd/0]
+    8 ?  S 0:10 [rcu_sched]
+    9 ?  S 0:00 [rcu_bh]
+   10 ?  S 0:00 [migration/0]
+   11 ?  S 0:00 [watchdog/0]
+   12 ?  S 0:00 [cpuhp/0]
+   13 ?  S 0:00 [cpuhp/1]
+   14 ?  S 0:00 [watchdog/1]
+   15 ?  S 0:00 [migration/1]
+   16 ?  S 0:00 [ksoftirqd/1]
+   18 ?  S< 0:00 [kworker/1:0H]
+   19 ?  S 0:00 [cpuhp/2]
+   20 ?  S 0:00 [watchdog/2]
+   21 ?  S 0:00 [migration/2]
+   22 ?  S 0:00 [ksoftirqd/2]
+   24 ?  S< 0:00 [kworker/2:0H]
+   25 ?  S 0:00 [cpuhp/3]
+   26 ?  S 0:00 [watchdog/3]
+   27 ?  S 0:00 [migration/3]
+   28 ?  S 0:00 [ksoftirqd/3]
+   30 ?  S< 0:00 [kworker/3:0H]
+   31 ?  S 0:00 [kdevtmpfs]
+   32 ?  S< 0:00 [netns]
+   36 ?  S 0:00 [khungtaskd]
+   37 ?  S 0:00 [oom_reaper]
+   38 ?  S< 0:00 [writeback]
+   39 ?  S 0:00 [kcompactd0]
+   40 ?  SN 0:00 [ksmd]
+   41 ?  SN 0:00 [khugepaged]
+   42 ?  S< 0:00 [crypto]
+   43 ?  S< 0:00 [kintegrityd]
+   44 ?  S< 0:00 [kblockd]
+   46 ?  S< 0:00 [ata_sff]
+   47 ?  S< 0:00 [md]
+   48 ?  S< 0:00 [edac-poller]
+   49 ?  S< 0:00 [devfreq_wq]
+   51 ?  S< 0:00 [watchdogd]
+   54 ?  S 0:00 [kauditd]
+   55 ?  S 0:00 [kswapd0]
+   56 ?  S 0:00 [ecryptfs-kthrea]
+   98 ?  S< 0:00 [kthrotld]
+   99 ?  S< 0:00 [acpi_thermal_pm]
+  105 ?  S< 0:00 [ipv6_addrconf]
+  130 ?  S< 0:00 [charger_manager]
+  172 ?  S 0:00 [irq/16-mmc0]
+  178 ?  S< 0:00 [nvkm-disp]
+  180 ?  S 0:00 [scsi_eh_0]
+  181 ?  S< 0:00 [scsi_tmf_0]
+  182 ?  S 0:00 [scsi_eh_1]
+  183 ?  S< 0:00 [scsi_tmf_1]
+  184 ?  S 0:00 [scsi_eh_2]
+  185 ?  S< 0:00 [scsi_tmf_2]
+  186 ?  S 0:00 [scsi_eh_3]
+  187 ?  S< 0:00 [scsi_tmf_3]
+  189 ?  S 0:03 [i915/signal:0]
+  190 ?  S 0:00 [i915/signal:1]
+  191 ?  S 0:00 [i915/signal:2]
+  192 ?  S 0:00 [i915/signal:4]
+  198 ?  S< 0:00 [kworker/0:1H]
+  199 ?  S< 0:00 [kworker/3:1H]
+  201 ?  S< 0:00 [ttm_swap]
+  220 ?  S< 0:00 [kworker/1:1H]
+  223 ?  S< 0:00 [kworker/2:1H]
+  228 ?  S 0:00 [jbd2/sda1-8]
+  229 ?  S< 0:00 [ext4-rsv-conver]
+  264 ?  Ss 0:00 /lib/systemd/systemd-journald
+  290 ?  Ss 0:00 /lib/systemd/systemd-udevd
+  406 ?  Ssl 0:00 /lib/systemd/systemd-timesyncd
+  476 ?  S 0:00 [irq/18-smo8800]
+  515 ?  S 0:00 [irq/47-mei_me]
+  559 ?  S< 0:00 [cfg80211]
+  563 ?  S< 0:00 [kworker/u9:0]
+  565 ?  S< 0:00 [kworker/u9:2]
+  568 ?  S 0:15 [irq/49-iwlwifi]
+  788 ?  Ss 0:08 avahi-daemon: running [devugees-fbw-8-10.local]
+  795 ?  Ss 0:00 /lib/systemd/systemd-logind
+  796 ?  Ssl 0:00 /usr/lib/accountsservice/accounts-daemon
+  797 ?  Ss 0:02 /usr/sbin/acpid
+  800 ?  Ssl 0:02 /usr/sbin/thermald --no-daemon --dbus-enable
+  801 ?  S 0:00 avahi-daemon: chroot helper
+  806 ?  Ss 0:13 /usr/bin/dbus-daemon --system --address=systemd: 
+--nofork --nopidfile --systemd-activation
+  819 ?  Ssl 0:16 /usr/sbin/NetworkManager --no-daemon
+  821 ?  Ss 0:00 /usr/sbin/cupsd -l
+  825 ?  Ssl 0:00 /usr/sbin/rsyslogd -n
+  829 ?  Ss 0:00 /usr/lib/bluetooth/bluetoothd
+  843 ?  Ss 0:00 /usr/sbin/cron -f
+  846 ?  Ssl 0:00 /usr/lib/snapd/snapd
+  848 ?  Ssl 0:00 /usr/sbin/cups-browsed
+  904 ?  Ss 0:01 /usr/sbin/irqbalance --pid=/var/run/irqbalance.pid
+  916 ?  SLsl 0:00 /usr/sbin/lightdm
+  933 ?  Ssl 0:00 /usr/lib/policykit-1/polkitd --no-debug
+  942 ?  Ssl 1:19 /usr/bin/mongod --config /etc/mongod.conf
+  953 tty7 Ssl+ 5:13 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth 
+/var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+  964 ?  Ss 0:03 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+ 1029 ?  Sl 0:00 lightdm --session-child 12 19
+ 1089 ?  SNsl 0:00 /usr/lib/rtkit/rtkit-daemon
+ 1126 ?  Ssl 0:01 /usr/lib/upower/upowerd
+ 1156 ?  S< 0:00 [krfcommd]
+ 1170 ?  Ssl 0:00 /usr/lib/colord/colord
+ 1194 ?  Ssl 0:00 /usr/bin/whoopsie -f
+ 1198 tty1 Ss+ 0:00 /sbin/agetty --noclear tty1 linux
+ 1229 ?  Ss 0:00 /lib/systemd/systemd --user
+ 1231 ?  S 0:00 (sd-pam)
+ 1306 ?  Sl 0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+ 1310 ?  Ss 0:00 /sbin/upstart --user
+ 1390 ?  S 0:00 upstart-udev-bridge --daemon --user
+ 1398 ?  Ss 0:18 dbus-daemon --fork --session 
+--address=unix:abstract=/tmp/dbus-RNR6O6faBZ
+ 1410 ?  Ss 0:00 /usr/lib/x86_64-linux-gnu/hud/window-stack-bridge
+ 1456 ?  S 0:01 upstart-dbus-bridge --daemon --system --user --bus-name 
+system
+ 1457 ?  Ssl 0:06 /usr/lib/x86_64-linux-gnu/bamf/bamfdaemon
+ 1460 ?  S 0:05 upstart-dbus-bridge --daemon --session --user --bus-name 
+session
+ 1461 ?  Ssl 1:04 /usr/bin/ibus-daemon --daemonize --xim --address 
+unix:tmpdir=/tmp/ibus
+ 1467 ?  Sl 0:00 /usr/lib/gvfs/gvfsd
+ 1469 ?  S 0:00 upstart-file-bridge --daemon --user
+ 1475 ?  Sl 0:00 /usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o 
+big_writes
+ 1485 ?  Sl 0:00 /usr/lib/ibus/ibus-dconf
+ 1487 ?  Sl 0:07 /usr/lib/ibus/ibus-ui-gtk3
+ 1491 ?  Sl 0:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+ 1494 ?  Sl 0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+ 1509 ?  S 0:00 /usr/bin/dbus-daemon 
+--config-file=/etc/at-spi2/accessibility.conf --nofork --print-address 3
+ 1512 ?  Sl 0:02 /usr/lib/at-spi2-core/at-spi2-registryd 
+--use-gnome-session
+ 1518 ?  Sl 0:13 /usr/lib/ibus/ibus-engine-simple
+ 1545 ?  Ss 0:00 gpg-agent --homedir /home/devugees/.gnupg 
+--use-standard-socket --daemon
+ 1555 ?  Ssl 0:12 /usr/lib/x86_64-linux-gnu/hud/hud-service
+ 1557 ?  Ssl 0:01 /usr/lib/unity-settings-daemon/unity-settings-daemon
+ 1569 ?  Ssl 0:00 /usr/lib/gnome-session/gnome-session-binary 
+--session=ubuntu
+ 1579 ?  Ssl 0:38 /usr/lib/x86_64-linux-gnu/unity/unity-panel-service
+ 1619 ?  Sl 0:00 /usr/lib/dconf/dconf-service
+ 1624 ?  Ssl 0:00 
+/usr/lib/x86_64-linux-gnu/indicator-messages/indicator-messages-service
+ 1627 ?  Ssl 0:00 
+/usr/lib/x86_64-linux-gnu/indicator-bluetooth/indicator-bluetooth-service
+ 1628 ?  Ssl 0:00 
+/usr/lib/x86_64-linux-gnu/indicator-power/indicator-power-service
+ 1631 ?  Ssl 0:00 
+/usr/lib/x86_64-linux-gnu/indicator-datetime/indicator-datetime-service
+ 1633 ?  Ssl 0:00 
+/usr/lib/x86_64-linux-gnu/indicator-keyboard/indicator-keyboard-service 
+--use-gtk
+ 1635 ?  Ssl 0:00 
+/usr/lib/x86_64-linux-gnu/indicator-sound/indicator-sound-service
+ 1636 ?  Ssl 0:00 
+/usr/lib/x86_64-linux-gnu/indicator-printers/indicator-printers-service
+ 1637 ?  Ssl 0:00 
+/usr/lib/x86_64-linux-gnu/indicator-session/indicator-session-service
+ 1642 ?  Ssl 0:15 
+/usr/lib/x86_64-linux-gnu/indicator-application/indicator-application-service
+ 1659 ?  Sl 0:00 /usr/lib/evolution/evolution-source-registry
+ 1693 ?  S<l 0:03 /usr/bin/pulseaudio --start --log-target=syslog
+ 1707 ?  Ssl 8:26 compiz
+ 1711 ?  S 0:01 syndaemon -i 1.0 -t -K -R
+ 1719 ?  Sl 0:00 /usr/lib/evolution/evolution-calendar-factory
+ 1745 ?  S 0:00 /usr/sbin/dnsmasq --no-resolv --keep-in-foreground 
+--no-hosts --bind-interfaces 
+--pid-file=/var/run/NetworkManager/dnsmasq.pid 
+--listen-address=127.0.1.1 --cache-size=0 --conf-file=/dev/null 
+--proxy-dnssec --enable-dbus=org.freedesktop.NetworkManager.dnsmasq 
+--conf-dir=/etc/NetworkManager/dnsmasq.d
+ 1766 ?  Sl 0:00 
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+ 1768 ?  Sl 1:06 nm-applet
+ 1774 ?  Sl 0:26 nautilus -n
+ 1776 ?  SLl 0:02 /usr/bin/gnome-software --gapplication-service
+ 1783 ?  Sl 0:00 
+/usr/lib/unity-settings-daemon/unity-fallback-mount-helper
+ 1861 ?  Sl 0:00 
+/usr/lib/evolution/evolution-calendar-factory-subprocess --factory 
+contacts --bus-name 
+org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx1719x2 
+--own-path 
+/org/gnome/evolution/dataserver/Subprocess/Backend/Calendar/1719/2
+ 1869 ?  Sl 0:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+ 1872 ?  Ssl 0:01 /usr/lib/udisks2/udisksd --no-debug
+ 1880 ?  Ssl 0:00 /usr/lib/x86_64-linux-gnu/fwupd/fwupd
+ 1894 ?  Sl 0:00 /usr/lib/evolution/evolution-addressbook-factory
+ 1900 ?  Sl 0:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+ 1903 ?  Sl 0:00 
+/usr/lib/evolution/evolution-calendar-factory-subprocess --factory local 
+--bus-name 
+org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx1719x3 
+--own-path 
+/org/gnome/evolution/dataserver/Subprocess/Backend/Calendar/1719/3
+ 1912 ?  Sl 0:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+ 1923 ?  Sl 0:00 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+ 1931 ?  Sl 0:00 
+/usr/lib/evolution/evolution-addressbook-factory-subprocess --factory 
+local --bus-name 
+org.gnome.evolution.dataserver.Subprocess.Backend.AddressBookx1894x2 
+--own-path 
+/org/gnome/evolution/dataserver/Subprocess/Backend/AddressBook/1894/2
+ 1935 ?  Sl 0:00 /usr/lib/gvfs/gvfs-goa-volume-monitor
+ 1986 ?  Sl 0:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.5 
+/org/gtk/gvfs/exec_spaw/0
+ 2084 ?  Sl 0:07 /usr/lib/x86_64-linux-gnu/notify-osd
+ 2219 ?  Sl 0:00 zeitgeist-datahub
+ 2226 ?  S 0:00 /bin/sh -c 
+/usr/lib/x86_64-linux-gnu/zeitgeist/zeitgeist-maybe-vacuum; 
+/usr/bin/zeitgeist-daemon
+ 2230 ?  Sl 0:00 /usr/bin/zeitgeist-daemon
+ 2237 ?  Sl 0:00 /usr/lib/x86_64-linux-gnu/zeitgeist-fts
+ 2298 ?  Sl 0:00 update-notifier
+ 2386 ?  Sl 0:00 /usr/lib/x86_64-linux-gnu/deja-dup/deja-dup-monitor
+ 2444 ?  Sl 0:46 /usr/lib/gnome-terminal/gnome-terminal-server
+ 6032 ?  Sl 0:00 /usr/lib/gvfs/gvfsd-network --spawner :1.5 
+/org/gtk/gvfs/exec_spaw/1
+ 6063 ?  Sl 0:00 /usr/lib/gvfs/gvfsd-dnssd --spawner :1.5 
+/org/gtk/gvfs/exec_spaw/6
+ 6076 ?  Sl 0:00 /usr/lib/gvfs/gvfsd-metadata
+ 6346 ?  Sl 0:00 
+/usr/lib/x86_64-linux-gnu/unity-scope-home/unity-scope-home
+ 6357 ?  Sl 0:00 /usr/bin/unity-scope-loader 
+applications/applications.scope applications/scopes.scope commands.scope
+ 6359 ?  Sl 0:00 
+/usr/lib/x86_64-linux-gnu/unity-lens-files/unity-files-daemon
+ 6399 ?  Sl 0:00 
+/usr/lib/x86_64-linux-gnu/unity-lens-music/unity-music-daemon
+ 6994 ?  S 0:00 /sbin/dhclient -d -q -sf 
+/usr/lib/NetworkManager/nm-dhcp-helper -pf /var/run/dhclient-wlp2s0.pid 
+-lf 
+/var/lib/NetworkManager/dhclient-8108b3d4-a295-4be7-b135-3605436682d5-wlp2s0.lease 
+-cf /var/lib/NetworkManager/dhclient-wlp2s0.conf wlp2s0
+ 7665 ?  Sl 0:00 /usr/lib/libreoffice/program/oosplash --writer
+ 7684 ?  Sl 0:34 /usr/lib/libreoffice/program/soffice.bin --writer 
+--splash-pipe=5
+ 7735 pts/18 Ss 0:00 bash
+ 9769 pts/18 S 0:00 sudo su
+ 9770 pts/18 S 0:00 su
+ 9771 pts/18 S 0:00 bash
+ 9870 pts/18 S 0:00 su
+ 9871 pts/18 S+ 0:00 bash 13822 ?  S 0:00 [kworker/2:0] 13939 pts/2 Ss+ 
+0:00 bash 14308 ?  S 0:01 [kworker/u8:1] 14321 pts/17 Ss+ 0:00 bash 
+15521 ?  S 0:01 [kworker/u8:3] 15546 ?  SLl 1:45 
+/opt/google/chrome/chrome 15553 ?  S 0:00 cat 15554 ?  S 0:00 cat 15557 
+?  S 0:00 /opt/google/chrome/chrome --type=zygote 15558 ?  S 0:00 
+/opt/google/chrome/nacl_helper 15561 ?  S 0:00 /opt/google/chrome/chrome 
+--type=zygote 15621 ?  Sl 0:49 /opt/google/chrome/chrome 
+--type=gpu-process 
+--field-trial-handle=14249816928224011947,9561167733143212486,131072 
+--gpu-preferences=KAAAAAAAAAAAAQAAAQAAAAAAAAAAAGAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA 
+--gpu-vendor-id=0x10de --gpu-device-id=0x1140 --gpu-driver-vendor 
+--gpu-driver-version --gpu-driver-date --gpu-secondary-vendor-ids=0x8086 
+--gpu-secondary-device-ids=0x0a16 
+--service-request-channel-token=CFB4C9A2188ABAFFE32F88E6FE4CDD82 15657 ?  
+S 0:00 /opt/google/chrome/chrome --type=-broker 15741 ?  Sl 0:36 
+/opt/google/chrome/chrome --type=renderer 
+--field-trial-handle=14249816928224011947,9561167733143212486,131072 
+--service-pipe-token=7229CF2F6B4041A2800B46DEFA13F41A --lang=en-US 
+--enable-offline-auto-reload --enable-offline-auto-reload-visible-only 
+--num-raster-threads=2 --enable-main-frame-before-activation 
+--enable-compositor-image-animations 
+--service-request-channel-token=7229CF2F6B4041A2800B46DEFA13F41A 
+--renderer-client-id=7 
+--shared-files=v8_context_snapshot_data:100,v8_natives_data:101,v8_snapshot_data:102 
+15760 ?  Sl 0:00 /opt/google/chrome/chrome --type=renderer 
+--field-trial-handle=14249816928224011947,9561167733143212486,131072 
+--service-pipe-token=B6036BE36B0BE1C5F37C38C445BCBF46 --lang=en-US 
+--enable-offline-auto-reload --enable-offline-auto-reload-visible-only 
+--num-raster-threads=2 --enable-main-frame-before-activation 
+--enable-compositor-image-animations 
+--service-request-channel-token=B6036BE36B0BE1C5F37C38C445BCBF46 
+--renderer-client-id=9 
+--shared-files=v8_context_snapshot_data:100,v8_natives_data:101,v8_snapshot_data:102 
+15811 ?  S 0:00 [kworker/2:2] 15947 ?  S 0:00 [kworker/1:2] 15950 ?  S 
+0:00 [kworker/3:0] 16051 ?  S 0:00 [kworker/0:2] 16162 ?  S 0:00 
+[kworker/u8:2] 16247 ?  S 0:00 [kworker/0:0] 16273 ?  S 0:00 
+[kworker/1:0] 16281 ?  S 0:00 [kworker/3:2] 16681 pts/19 Ss 0:00 bash 
+17101 ?  Sl 1:52 /opt/google/chrome/chrome --type=renderer 
+--field-trial-handle=14249816928224011947,9561167733143212486,131072 
+--service-pipe-token=5FB26457DDC1DEC3177F7BA40C583D08 --lang=en-US 
+--enable-offline-auto-reload --enable-offline-auto-reload-visible-only 
+--num-raster-threads=2 --enable-main-frame-before-activation 
+--enable-compositor-image-animations 
+--service-request-channel-token=5FB26457DDC1DEC3177F7BA40C583D08 
+--renderer-client-id=23 
+--shared-files=v8_context_snapshot_data:100,v8_natives_data:101,v8_snapshot_data:102 
+17169 pts/20 Ss+ 0:00 bash 18060 pts/21 Ss+ 0:00 bash 18351 pts/22 Ss+ 
+0:00 bash 18766 pts/19 S+ 0:00 nano a.txt 18779 ?  S 0:00 [kworker/u8:0] 
+19083 pts/23 Ss 0:00 bash 19373 pts/23 R+ 0:00 ps ax 19374 pts/23 R+ 
+0:00 nano
