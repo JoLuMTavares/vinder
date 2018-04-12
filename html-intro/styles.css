@@ -4,6 +4,7 @@ body {
 }
 
 #fbB {
+    
     background-color: beige;
     color: brown;
 }
@@ -15,6 +16,8 @@ h1 {
 }
 
 #fbh {
+    border: 4px dotted silver;
+    width: 1280px;
     font-size: 3em;
     background: repeating-radial-gradient(rgb(12, 15, 214), skyblue, rgb(20, 20, 46));
 }
@@ -33,6 +36,7 @@ a:hover {
 }
 
 #fbOl {
+    width: 1024px;
     color: white;
     
     border: 4px solid gold;
