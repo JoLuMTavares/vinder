@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="../assets/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <title>EJS Templates</title>
+</head>
+<body>
+    <h1>Users</h1>
+
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Action</th>
+        </thead>
+        <tbody>
+            <% usersList.forEach((user, index, users) => {  %>
+
+                
+               
+           
+            <tr>
+                <td><%= user.id  %></td><td><%= user.name  %></td><td><a href="/deleteUser/<%= user.id  %>">Delete</a></td>
+                
+            </tr>
+            <%  }); %>
+        </tbody>
+    </table>
+
+
+    <h2>Create User</h2>
+    <form action="/addUser" method="post">
+        <fieldset>
+            Name : <input type="text" name="name" id="name" required/>
+
+            Password : <input type="text" name="password" id="password" required> 
+
+            Profession : <input type="text" name="profession" id="profession" required/>
+
+            <input type="submit" id="user-add" value="Submit">
+        </fieldset>
+    </form>
+    <div id="users-list">
+
+    </div>
+    <!-- Second part data handling with JSON -->
+    <script>
+        $.ajax({
+            type        : "POST",
+            url         : "/personjson",
+            data        : JSON.stringify({firstname: "Jane",
+                                 lastname : "Doe"}),
+            dataType    : "json",
+            contentType : "application/json"
+        });
+/*
+        $.ajax({
+            type        : "GET",
+            url         : "http://localhost:3000/listUsers",
+            dataType    : "json",
+            contentType : "application/json",
+            success  : function (response) {
+
+                var table = $("<table>");
+                var header = $("<th>ID</th><th>Name</th>");
+
+                table.append(header);
+
+                for (user in response) {
+                    var row = $("<tr>");
+                    var dataInfo = $("<td><a href='http://localhost:3000/person/" + response[user].id + "'>" + response[user].id + "</a></td><td>" + response[user].name + "</td>");
+                    row.append(dataInfo);
+                    table.append(row);
+                }
+
+                $("#users-list").append(table);
+            }
+
+        });
+*/
+        addEventListener("user-add", function (event) {
+            //  To cancel the default action, if needed
+            event.preventDefault();
+
+
+        });
+        
+    </script>
+
+</body>
+</html>

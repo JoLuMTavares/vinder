@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$primary-color: #dcab78;
+
+$secondary-color: #f08a5d;
+
+$tertiary-color: #c04612;
+
+$color-text-light: #777;
+
+$color-text-dark: #333;
+
+$button-text-width: 150px;
+
+@mixin clearfix {
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+@mixin style-link-text($color) {
+    text-decoration: none;
+    text-transform:  uppercase;
+    color: $color;
+    
+}
+
+@function divide($a, $b) {
+    @return $a / $b * 1px;
+}
+
+nav {
+    margin: divide(60, 2);
+    background-color: $primary-color;
+
+    @include clearfix;
+
+
+    .navigation {
+        list-style: none;
+        float: left;
+    
+        li {
+            display: inline-block;
+            margin-left: 30px;
+    
+            &:first-child {
+                margin: 0;
+            }
+        }
+    
+        a {
+            &:link {
+               @include style-link-text($color-text-dark);
+            
+            }
+        }
+    }
+}
+
+
+
+// .navigation li {
+//     display: inline-block;
+//     margin-left: 30px;
+// }
+
+// .navigation li:first-child {
+//     margin: 0;
+// }
+
+
+/* ******************
+
+And some task here
+
+nest the other nestable elements.
+
+****************** */
+
+// .navigation a:link {
+//     text-decoration: none;
+//     text-transform: uppercase;
+//     color: #333;
+
+// }
+
+.buttons {
+    float: right;
+}
+
+// This code block is not to be changed
+.btn-signUp:link,
+.btn-signIn:link {
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 100px;
+    @include style-link-text($color-text-light);
+    width: $button-text-width;
+}
+
+.btn-signUp {
+    &:link {
+        background-color: $secondary-color;
+    }
+
+    &:hover {
+        background-color: darken($secondary-color, 20%);
+        
+    }
+}
+
+.btn-signIn {
+    &:link {
+        background-color: $tertiary-color;
+    }
+
+    &:hover {
+        background-color: lighten($tertiary-color, 24%);
+    }
+}
+

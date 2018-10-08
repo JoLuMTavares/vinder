@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.header {
+  height: 60px;
+  border: 2px solid darkblue;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: flex-end; }
+  .header .navigation {
+    border: 2px solid darkgreen;
+    background-color: #92d050;
+    text-align: center;
+    width: 120px; }
+
+.main {
+  display: flex;
+  justify-content: center; }
+  .main .search-area {
+    margin-top: 100px;
+    border: 2px solid darkgreen;
+    background-color: #92d050;
+    padding: 10px;
+    justify-content: center;
+    flex-direction: column; }
+    .main .search-area .logo {
+      font-size: 4rem;
+      width: 271px;
+      height: 100px; }
+    .main .search-area .search-box {
+      margin-top: 10px;
+      font-size: 1rem;
+      display: block;
+      width: 100%; }
+    .main .search-area .buttons {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center; }
+      .main .search-area .buttons button {
+        font-size: 1rem;
+        padding: 3px;
+        margin-left: 10px; }
+
+.location {
+  display: none;
+  margin-top: 100px; }
+
+/*  Display for a small phone */
+@media only screen and (max-width: 492px) {
+  .location {
+    display: block;
+    position: fixed;
+    bottom: 0; }
+  .search-area {
+    width: 85%;
+    font-size: 1.5rem; }
+  .buttons {
+    font-size: 1.5rem; } }

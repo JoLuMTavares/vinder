@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Product Edition</h1>
+    <form action="/update" method="PUT">
+      <input type="hidden" name="_id" class="id" value="<%= ID %>">
+      <input type="text" name="product_name" id="productname" class="product_name" value="<%= name %>">
+      <input type="text" name="price" id="productprice" class="product_price" value="<%= price %>">
+      <select name="category" id="productcategory" class="product_category" value="<%= category %>">
+          <option value="camera">Camera</option>
+          <option value="electronics">Electronics</option>
+          <option value="Laptop">Laptop</option>
+          <option value="mPhone">Mobile Phone</option>          
+          <option value="tablet">Tablet</option>
+      </select>
+      <input type="submit" value="Update Product">
+    </form>
+    
+  </body>
+</html>

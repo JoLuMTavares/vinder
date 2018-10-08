@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <link rel="stylesheet" href="Elegant-Loading-Indicator-jQuery-Preloader/src/css/preloader.css">
+
+
+    <!-- For loading the page illusion. 
+        This is the Elegant Customizable from jQuery Script.net -->
+    <!-- <script src="Elegant-Loading-Indicator-jQuery-Preloader/src/js/jquery.preloader.min.js"></script>     -->
+        
+    <!-- animate CSS stylesheet library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <!-- jQuery library (served from Google) -->
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> -->
+    <script src="jquery-3.2.1.min.js"></script> 
+
+    <!-- Fake Loader to give the fake ilusion of loading a page -->
+    <!-- <script src="fakeLoader/fakeLoader.js"></script> -->
+
+    <!-- jcSlider Javascript file -->
+    <script src="jcSlider-master/jquery.jcslider.min.js"></script>
+    
+    
+
+    <title>jQuery Responsive Slider Plugin</title>
+</head>
+<body>
+
+    <h1>Responsive Slider</h1>
+
+    <ul class="jc-slider">
+
+        <li class="jc-animation">
+            <!-- <div class="bus-image"> -->
+                <img src="images/1967 Guy Victory CVU6LX_UTIC B18T_CCFL 72_P. Comércio 13 at P. Comércio.jpg" alt="1967 Guy Victory CVU6LX">
+            <!-- </div>     -->
+        </li>
+    
+        <li class="jc-animation">
+            <!-- <div class="bus-image"> -->
+                <img src="images/1977 AEC Reliance 10L_UTIC U2075_SMTCB 55_18 Clube Naval at Av Sapadores.jpg" alt="1977 AEC Reliance">    
+            <!-- </div> -->
+        </li>
+
+        <li class="jc-animation">
+            <!-- <div class="bus-image"> -->
+                <img src="images/1979 AEC Reliance 10L_UTIC U2076_SMTCB 72_17 Cidade Sol.jpg" alt="1979 AEC Reliance">    
+            <!-- </div> -->
+        </li>
+
+        <li class="jc-animation">
+            <!-- <div class="bus-image"> -->
+                <img src="images/1977 AEC Reliance 10L_UTIC U2075_SMTCB 60_3 Av Sapadores at Av Sapadores.jpg" alt="1977 AEC Reliance">    
+            <!-- </div> -->
+        </li>
+
+        <li class="jc-animation">
+            <!-- <div class="bus-image"> -->
+                <img src="images/1979 AEC UTIC U2047_SMTCB 37_Aluguer_at SMTCB home.jpg" alt="1979 AEC UTIC">    
+            <!-- </div> -->
+        </li>
+
+        <li class="jc-animation">
+            <!-- <div class="bus-image"> -->
+                <img src="images/1979 AEC Reliance 10L_UTIC U2076_SMTCB 77_1 Av Sapadores at Av Sapadores.jpg" alt="1979 AEC Reliance">    
+            <!-- </div> -->
+        </li>
+
+        <li class="jc-animation">
+            <!-- <div class="bus-image"> -->
+                <img src="images/1984 Volvo B10R-55_Camo UR81_SMTCB 82_1 Av. Sapadores_at Av. Sapadores.jpg" alt="1979 AEC Reliance">    
+            <!-- </div> -->
+        </li>
+
+        <li class="jc-animation">
+            <!-- <div class="bus-image"> -->
+                <img src="images/1979 AEC Reliance 10L_UTIC U2076_SMTCB 69_6 Fábricas da UFA at Campo do Luso.jpg" alt="1979 AEC Reliance">    
+            <!-- </div> -->
+        </li>
+
+        <li class="jc-animation">
+            <!-- <div class="bus-image"> -->
+                <img src="images/1986 Volvo B10R-56_Camo UR83_SMTCB 100_8 Terminal_at Terminal.jpg" alt="1979 AEC Reliance">    
+            <!-- </div> -->
+        </li>
+    </ul>
+
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.jc-slider').jcSlider({
+                animationIn     : "bounceInRight",
+                animationOut    : "bounceOutLeft", 
+                // animationIn: 'zoomInUp',
+                // animationOut: 'flipOutX',
+                // animationIn: 'zoomIn',
+                // animationOut: 'zoomOut',
+                stopOnHover     : true, // true by default
+                loop            : true // true by default
+            });
+        });
+    </script>
+    
+   
+
+
+
+    
+    <script src="main.js"></script>
+</body>
+</html>

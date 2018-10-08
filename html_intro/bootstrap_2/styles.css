@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    margin: 5% 0 5% 0;
+}
+
+.badges {
+    margin-top: 5%;
+}
+
+.badges span {
+    display: block;
+    width: 80px;
+}
+
+#logForm {
+    margin: 5% 0 5% 0;
+}
+
+h1 {
+    margin-top: 5%; 
+}
+
+.pizzas {
+    /* margin-top: 5%; */
+    display: flex; 
+    flex-direction: row;
+}
+
+.pTitle {
+    font-size: 1.5rem;
+}
+
+.images {
+    margin-top: 5%;
+}
+
+#carouselExampleIndicators {
+    display: block;
+    
+}
+
+.d-block {
+    width: 800px;
+    height: 600px;
+    
+    object-fit: cover;
+}

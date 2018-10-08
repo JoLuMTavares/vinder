@@ -1,0 +1,48 @@
+.border-box {
+    background: #eee;
+    margin: 20px 0 0 20px;
+    padding: 0;
+
+    width: 250px;
+    height: 250px;
+
+    background: radial-gradient(#da5, #c82, #000);
+    color: #bab;
+    font-weight: normal;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+#box-1 {
+    border: 3px solid #bbb;
+}
+
+#box-2 {
+    border: 3px dashed #bbb;
+}
+
+#box-3 {
+    border: 3px dotted #bbb;
+}
+
+#box-4 {
+    border: 3px double #bbb;
+}
+
+
+#box-5 {
+    border: thick solid  #bbb;
+}
+
+#box-6 {
+    border: thick dashed #bbb;
+}
+
+#box-7 {
+    border: thick dotted #bbb;
+}
+
+#box-8 {
+    border: thick double #bbb;
+}

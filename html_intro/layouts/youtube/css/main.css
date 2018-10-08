@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif; }
+
+body, html {
+  height: 100%; }
+
+.header {
+  width: 100%;
+  height: 6%;
+  border: 2px solid darkblue;
+  background-color: cornflowerblue;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  /* .navigation-1 {
+        right: 2%;
+    }*/ }
+  .header .logo, .header .navigation-1 {
+    border: 2px solid darkgreen;
+    background-color: #92d050;
+    color: #fff;
+    width: 15%;
+    height: 50%;
+    padding: 0.25%;
+    text-align: center;
+    position: relative;
+    top: 5%;
+    font-size: 1.5rem; }
+  .header .logo2 {
+    display: none; }
+  .header .search-bar {
+    width: 25%;
+    height: 60%;
+    position: relative;
+    top: 10%; }
+    .header .search-bar .header-search-box {
+      width: 75%;
+      height: 100%;
+      font-size: 100%; }
+    .header .search-bar button {
+      border: 2px solid darkgreen;
+      background-color: #92d050;
+      color: #fff;
+      height: 100%;
+      width: 7.5%;
+      font-size: 90%; }
+  .header .navigation-2 {
+    display: none; }
+
+.container {
+  width: 100%;
+  height: 120%;
+  border: 2px solid darkblue;
+  background-color: cornflowerblue;
+  color: #fff;
+  display: flex;
+  flex-direction: column; }
+  .container .upper-container {
+    width: 90%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 5%;
+    left: 5%; }
+    .container .upper-container .teaser, .container .upper-container .advert {
+      width: 49%;
+      height: 40%;
+      border: 2px solid darkgreen;
+      background-color: #92d050;
+      color: #fff;
+      text-align: center;
+      font-size: 3rem;
+      padding-top: 7%; }
+  .container .main-container {
+    width: 90%;
+    height: 27%;
+    position: relative;
+    left: 5%; }
+    .container .main-container .thumbnails {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly; }
+      .container .main-container .thumbnails li {
+        list-style: none;
+        width: 20%;
+        height: 35%;
+        border: 2px solid darkgreen;
+        background-color: #92d050;
+        color: #fff;
+        text-align: center;
+        padding-top: 6%;
+        font-size: 2rem;
+        margin-bottom: 5%; }
+
+/*  Display for a small phone */
+@media only screen and (max-width: 492px) {
+  .header {
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .header .logo {
+      display: none; }
+    .header .logo2 {
+      display: block;
+      border: 2px solid darkgreen;
+      background-color: #92d050;
+      color: #fff;
+      width: 10%;
+      height: 25%;
+      font-size: 1.5rem;
+      padding-top: 2%;
+      text-align: center;
+      position: relative;
+      top: 5.5%; }
+    .header .search-bar {
+      display: none; }
+    .header .navigation-1 {
+      width: 80%;
+      height: 30%; }
+    .header .navigation-2 {
+      margin-top: 2%;
+      display: block;
+      width: 98%;
+      height: 35%;
+      border: 2px solid darkgreen;
+      background-color: #92d050;
+      color: #fff;
+      padding-top: 5%;
+      text-align: center;
+      font-size: 1.5rem; }
+  .container {
+    height: 200%; }
+    .container .upper-container {
+      flex-direction: column-reverse; }
+      .container .upper-container .teaser, .container .upper-container .advert {
+        width: 100%; }
+    .container .main-container {
+      margin-top: 20%; }
+      .container .main-container .thumbnails {
+        display: block;
+        flex-direction: column; }
+        .container .main-container .thumbnails li {
+          width: 100%; } }

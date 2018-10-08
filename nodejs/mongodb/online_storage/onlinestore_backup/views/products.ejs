@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <form action="POST">
+      <input type="text" name="product-name" id="productname" class="product-name">
+      <input type="text" name="product-price" id="productprice" class="product-price">
+      <select name="product-category" id="productcategory" class="product-category">
+          <!-- <option value=""></option> -->
+          <option value="camera">Camera</option>
+          <option value="electronics">Electronics</option>
+          <option value="Laptop">Laptop</option>
+          <option value="mPhone">Mobile Phone</option>          
+          <option value="tablet">Tablet</option>
+      </select>
+      <input type="submit" value="Add Product">
+    </form>
+    <table id="products">
+      <thead>
+        <th>ID</th>
+        <th>Product Name</th>
+        <th>Price</th>
+        <th>Category</th>
+        <th>Action</th>
+      </thead>
+      <tbody>
+       
+      </tbody>
+    </table>
+  </body>
+</html>

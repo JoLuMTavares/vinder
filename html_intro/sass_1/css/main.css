@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+nav {
+  margin: 30px;
+  background-color: #dcab78; }
+  nav::after {
+    content: "";
+    clear: both;
+    display: table; }
+  nav .navigation {
+    list-style: none;
+    float: left; }
+    nav .navigation li {
+      display: inline-block;
+      margin-left: 30px; }
+      nav .navigation li:first-child {
+        margin: 0; }
+    nav .navigation a:link {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #333; }
+
+/* ******************
+
+And some task here
+
+nest the other nestable elements.
+
+****************** */
+.buttons {
+  float: right; }
+
+.btn-signUp:link,
+.btn-signIn:link {
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 100px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #777;
+  width: 150px; }
+
+.btn-signUp:link {
+  background-color: #f08a5d; }
+
+.btn-signUp:hover {
+  background-color: #d34e14; }
+
+.btn-signIn:link {
+  background-color: #c04612; }
+
+.btn-signIn:hover {
+  background-color: #f0895d; }

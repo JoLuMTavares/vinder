@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+$primary-color: #dcab78;
+
+$secondary-color: #f08a5d;
+
+$tertiary-color: #c04612;
+
+$color-text-light: #777;
+
+$color-text-dark: #333;
+
+$button-text-width: 150px;
+
+@mixin clearfix {
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+@mixin style-link-text($color) {
+    text-decoration: none;
+    text-transform:  uppercase;
+    color: $color;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    
+}
+
+@mixin radial-gradient-background($inColor, $mColor, $outColor) {
+    background: radial-gradient($inColor, $mColor, $outColor);
+}
+
+/* Navigation image settings */
+@mixin header-Image {
+    width: 400px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Standard image settings. */
+@mixin standard-image-size {
+    width: 550px;
+    height: 550px;
+    object-fit: cover;
+}
+
+
+/* Standard block settings. */
+@mixin standard-block {
+    width: 550px;
+    height: 550px;
+    color: gold;
+    background-color: navy;
+    text-align: center;
+    
+}
+
+
+nav {
+    margin: 2.5%;
+    padding: 3%;
+    @include radial-gradient-background(#ffeac4, #fdb226, #9e6700);
+    
+    
+    @include clearfix;
+
+    .hImage {
+        @include header-Image;
+    }
+
+    .navigation {
+        list-style: none;
+        float: right;
+
+        li {
+            display: inline-block;
+            margin-left: 30px;
+    
+            &:first-child {
+                margin: 0;
+            }
+        }
+    
+        a {
+            &:link {
+                padding: 10px; 
+                @include style-link-text($color-text-dark);
+            
+            }
+
+            &:hover {
+                border-radius: 10px;
+                color: #acacac;
+                @include radial-gradient-background(#037, #05a, #39d);
+            }
+        }
+    }
+}
+
+.container {
+
+    margin: 4%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .small-block1 {
+        display: flex;
+    }
+
+    .image {
+        margin: 0.1%;
+        @include standard-image-size;
+    }
+
+    .block {
+        margin: 0.1%;
+        @include standard-block;
+    }
+
+}

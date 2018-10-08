@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DOM Manipulation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script type="text/javascript" src="../lib/jquery/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+       
+
+    <div id="myDiv" class="header">
+        <h2>To Do List</h2>
+        <input type="text" id="myInput" placeholder="Title...">
+        <!-- <span class="addBtn">Add</span>  -->
+        <!-- onclick="newElement()"-->
+        <div class="insertAfter link">
+            Insert at end
+        </div>
+    
+        <div class="after link">
+            Insert at end
+        </div>
+    
+        <div class="insertBefore link">
+            Insert at start
+        </div>
+    
+        <br>
+    
+        <div class="before link">
+            Insert at start
+        </div>
+    
+        <div class="appendTo link">
+            First becomes last
+        </div>
+    
+        <div class="append link">
+            First becomes last
+        </div>
+
+        <div class="removeFirst link">
+            Remove First
+        </div>
+
+        <div class="removeLast link">
+            Remove Last
+        </div>
+
+        <div class="addBack link">
+            Add back
+        </div>
+    </div>
+     
+    <ul id="myUL">
+        <li>Hit the gym<span class="close"><i class="glyphicon glyphicon-remove"></i></span></li>
+        <li class="checked">Pay bills<span class="close"><i class="glyphicon glyphicon-remove"></i></span></li>
+        <li>Meet George<span class="close"><i class="glyphicon glyphicon-remove"></i></span></li>
+        <li>Buy eggs<span class="close"><i class="glyphicon glyphicon-remove"></i></span></li>
+        <li>Read a book<span class="close"><i class="glyphicon glyphicon-remove"></i></span></li>
+        <li>Organize office<span class="close"><i class="glyphicon glyphicon-remove"></i></span></li>
+    </ul>
+
+    <script type="text/javascript">
+        document.write('<scr'+ 'ipt src= "manipulation.js?' + Math.random()+'" type="text/javascript"></scr' + 'ipt');    
+    </script>
+</body>
+</html>

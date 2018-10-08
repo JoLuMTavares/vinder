@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body, html {
+  height: 100%; }
+
+body {
+  border: 2px solid darkblue;
+  background-color: cornflowerblue; }
+
+.header {
+  height: 60px;
+  border: 2px solid darkblue;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: space-between; }
+  .header .lNavigation {
+    border: 2px solid darkgreen;
+    background-color: #92d050;
+    color: #fff;
+    text-align: center;
+    width: 120px; }
+  .header .rNavigation {
+    border: 2px solid darkgreen;
+    background-color: #92d050;
+    color: #fff;
+    text-align: center;
+    width: 120px; }
+
+.main {
+  display: flex;
+  justify-content: center; }
+  .main .search-area {
+    margin: 100px 0 0 -350px;
+    padding: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    /*
+        .buttons {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+
+            button {
+                font-size: 1rem;
+                padding: 3px;
+                margin-left: 10px;
+            }
+        }
+        */ }
+    .main .search-area .leftA {
+      margin-top: 1%; }
+      .main .search-area .leftA .logo {
+        font-size: 3rem;
+        width: 165px;
+        height: 60px; }
+      .main .search-area .leftA .navigation {
+        display: none; }
+    .main .search-area .rightA {
+      width: 90%;
+      height: 26%;
+      display: flex;
+      flex-direction: row; }
+      .main .search-area .rightA .search-box {
+        margin-top: 3%;
+        font-size: 90%;
+        height: 45px;
+        width: 100%; }
+      .main .search-area .rightA button {
+        border: 2px solid darkgreen;
+        background-color: #92d050;
+        color: #fff;
+        font-size: 2rem;
+        padding: 10px;
+        margin: 3% 0 0 1.5%;
+        height: 50px;
+        width: 50px; }
+
+.thumbs {
+  border: 2px solid darkgreen;
+  background-color: #92d050;
+  color: #fff;
+  width: 90%;
+  height: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+  margin-left: 5%;
+  position: absolute;
+  bottom: 0.3%;
+  padding-top: 2%;
+  font-size: 2rem; }
+
+/*  Display for a small phone */
+@media only screen and (max-width: 492px) {
+  .header {
+    display: none; }
+  .main {
+    display: block; }
+    .main .search-area {
+      height: 100%;
+      margin-left: 1%;
+      width: 95%;
+      font-size: 1.5rem;
+      display: flex;
+      flex-wrap: wrap; }
+      .main .search-area .leftA {
+        margin-top: -21%; }
+        .main .search-area .leftA .logo {
+          font-size: 3rem;
+          position: fixed;
+          left: 2%; }
+        .main .search-area .leftA .navigation {
+          border: 2px solid darkgreen;
+          background-color: #92d050;
+          color: #fff;
+          display: block;
+          padding: 10px;
+          height: 45px;
+          width: 45px;
+          text-align: center;
+          font-size: 2rem;
+          position: fixed;
+          top: 2%;
+          right: 6%; }
+      .main .search-area .rightA {
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: row;
+        margin: 10% 5% 20% 0; }
+        .main .search-area .rightA .search-box {
+          margin-top: 3%;
+          font-size: 90%;
+          height: 45px;
+          width: 100%; }
+        .main .search-area .rightA button {
+          border: 2px solid darkgreen;
+          background-color: #92d050;
+          color: #fff;
+          font-size: 2rem;
+          padding: 10px;
+          margin: 3% 0 0 1.5%;
+          height: 50px;
+          width: 50px; }
+  .thumbs {
+    display: none; }
+  /*
+    .buttons {
+        font-size: 1.5rem;
+    }
+    */ }

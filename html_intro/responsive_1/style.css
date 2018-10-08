@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    display: none;
+}
+
+/* Small phone from  0 to 480px */
+@media only screen and (max-width: 480px) {
+    .a { display: block; }
+    div:not(a) {display: none;}
+}
+
+/*
+
+Task
+
+1- Only show div b if the visitor's device
+is a small phone or small tablet
+
+2- Only show div c if the visitor's device
+is a small tablet or a big tablet
+
+3- Only show div d if the visitor's device
+is a big tablet or a desktop
+
+*/
+
+@media only screen and (max-width: 768px) 
+and (min-width: 480px) {
+    .b { display: block; }
+    div:not(b) {display: none;}
+}
+
+@media only screen and (max-width: 1024px) 
+and (min-width: 768px) {
+    .c { display: block; }
+    div:not(c) {display: none;}
+}
+
+@media only screen and (max-width: 1200px) 
+and (min-width: 1024px)  {
+    .d { display: block; }
+    div:not(d) {display: none;}
+}
+
+

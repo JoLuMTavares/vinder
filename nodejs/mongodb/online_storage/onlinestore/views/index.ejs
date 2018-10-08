@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <form action="/insert" method="POST">
+      <input type="text" name="product_name" id="productname" class="product_name">
+      <input type="text" name="price" id="productprice" class="product_price">
+      <select name="category" id="productcategory" class="product_category">
+          <!-- <option value=""></option> -->
+          <option value="camera">Camera</option>
+          <option value="electronics">Electronics</option>
+          <option value="Laptop">Laptop</option>
+          <option value="mPhone">Mobile Phone</option>          
+          <option value="tablet">Tablet</option>
+      </select>
+      <input type="submit" value="Add Product">
+    </form>
+    <table>
+      <thead>
+        <th>ID</th>
+        <th>Product Name</th>
+        <th>Price</th>
+        <th>Category</th>
+        <th>Action</th>
+      </thead>
+      <tbody>
+        <% products.forEach( product =>{ %>
+          <tr>
+              <td><%= product._id %></td>
+              <td><%= product.product_name %></td>
+              <td><%= product.price %></td>
+              <td><%= product.category %></td>
+              <td >
+                  <a href="/edit?id=<%= product._id%>" > Edit</a>
+                  <a href="/delete?id=<%= product._id%>" onclick="return confirm('This product will be removed. Do you confirm?')"> delete</a>
+              </td>
+          </tr>
+        <%});%>
+      </tbody>
+    </table>
+  </body>
+</html>

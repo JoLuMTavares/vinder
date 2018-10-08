@@ -1,0 +1,40 @@
+/* Task - 
+    Create a CSS Grid of 
+    the wrapper div abd equally distribute
+    the width among the grid
+    columns. 
+
+    Give the grid a gap of 1em.
+*/
+
+.wrapper {
+    margin: 20px;
+    display: grid;
+    height: 500px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+}
+
+
+.wrapper > div {
+    background-color: #eee;
+    padding: 1em;
+}
+
+.wrapper > div:nth-child(odd) {
+    background-color: #ddd;
+}
+
+.nested {
+    display: grid;
+    grid-template-rows: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: 100px;
+}
+
+.nested > div {
+    border: #333 1px solid;
+    padding: 1em;
+}
+

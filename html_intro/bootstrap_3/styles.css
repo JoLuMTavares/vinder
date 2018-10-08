@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.yellow {
+    background-color: rgb(255, 217, 0);
+}
+
+.black {
+    background-color: #000;
+    color: #ddd;
+}
+
+.light-silver {
+    background-color: #ddd;
+    color: #333;
+}
+
+.silver {
+    background-color: silver;
+    
+}
+
+.dark-grey {
+    background-color: darkgray;
+}
+
+.container > div  {
+    border: 1px solid black;
+}
+
+.container > div:nth-child(even) {
+    background-color: navy;
+    color: gold;
+}
+
+
+.container > div > :nth-child(even) {
+    background-color: rgb(38, 0, 128);
+    color: #ccc;
+}

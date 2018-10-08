@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <script src="javascript/jquery-3.3.1.min.js"></script>
+    <script src="javascript/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <title>Late Comers List</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a name="add-late-comer" id="addLateComer" class="nav-link" href="#">New Too Late Comer</a>
+                </li>
+                <li class="nav-item">
+                    <a name="history" id="history" class="nav-link" href="#">History</a>
+                </li>
+                <li class="nav-item">
+                    <a name="logout" id="logout" class="nav-link" href="/logout">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <form id="addLateComerForm" action="/insert" method="POST" style="display : none">
+        <input type="text" name="name" id="elementName" class="form-control" placeholder="The name" required>
+        <input type="date" name="date" id="elementDate" class="form-control" required>
+        <input type="time" name="time" id="elementTime" class="form-control" required>
+        <input type="submit" class="btn btn-outline-success" value="Add Element">
+    </form>
+    <table id="late-comers-table">
+        <thead>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Minutes Too Late</th>
+            <th>Action</th>
+        </thead>
+        <tbody>
+            <% elements.forEach( abuser =>{ %>
+            <tr>
+                <td><%= abuser.name %></td>
+                <td><%= abuser.date %></td>
+                <td><%= abuser.time %></td>
+                <td><%= abuser.difference %></td>
+                <td >
+                    <!-- <a href="/edit?id=<%= abuser._id%>" >Edit</a> -->
+                    <a class="btn btn-outline-dark" href="/delete?id=<%= abuser._id%>" onclick="return confirm('This abuser will be removed. Do you confirm?')">Remove</a>
+                </td>
+            </tr>
+            <%});%>
+        </tbody>
+    </table>
+    <!-- <link rel="stylesheet" href="stylesheets/bootstrap-4.1.3-dist/bootstrap.min.css"> -->
+
+    
+
+
+    <script>
+        $("#history").click(function () {
+            $("#addLateComerForm").hide();
+            $("#late-comers-table").show();
+        });
+        $("#addLateComer").click(function () {
+            $("#addLateComerForm").show();
+            $("#late-comers-table").hide();
+        });
+    </script>
+</body>
+</html>

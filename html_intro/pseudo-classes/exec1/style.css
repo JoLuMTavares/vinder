@@ -1,0 +1,46 @@
+/* THIS is where your code will be: */
+
+
+
+
+/* IGNORE: Styling for readability purposes only
+-------------------------------------------------------------*/
+
+body {
+  margin: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #0099cc;
+}
+
+h2 {
+  margin: 1.5rem 0;
+  font-size: 1.75rem;
+  color: #555555;
+}
+
+p {
+  font-size: 1.15rem;
+  color: #333333;
+}
+
+#box1 {
+  width: 10rem;
+  height: 10rem;
+  background-color: #eee;
+  text-align: center;
+  border: 2px solid #888;
+  font-family: Times New Roman;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #555;
+  line-height: 10rem;
+}
+
+#box1:hover {
+  background-color: #999;
+  border-color: #555;
+  color: #fff;
+}

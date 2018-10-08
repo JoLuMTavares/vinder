@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Google Maps 3</title>
+    <style>
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #map {
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="map">
+
+    </div>
+
+    <script>
+
+        var map;
+
+        function initMap() {
+
+            let startPosition = { lat : -34.397, lng : 150.644 };
+
+            map = new google.maps.Map(document.getElementById('map'),
+            { center : startPosition , zoom : 8});
+
+            var geocoder = new google.maps.Geocoder();
+            var location = 'New York, USA';
+
+            geocoder.geocode({'address' : location },
+                function (results, status) {
+                    if ( status = google.maps.GeocoderStatus.OK) {
+                        let lat = results[0].geometry.location.lat();
+                        let lng = results[0].geometry.location.lng();
+
+                        var newMarker = new google.maps.Marker({
+                            position : { lat :  lat, lng : lng},
+                            map : map,
+                            title : location
+                        });
+
+                        map.setCenter({lat : lat, lng : lng});
+
+                    }
+                    else
+                        alert("Invalid location!");
+                });
+                    
+                setTimeout( () => {
+
+                    map.setCenter( { lat : 22.000, lng : 35.000 } );
+                    map.setZoom(5);
+
+                }, 5000 );
+           
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPL5FbwKVlLkZL0quNPnsi3dOpK-d59Ko&callback=initMap"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Google Maps Project</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="style.css">
+        
+        
+        <style>
+
+            html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            
+            #map {
+                height: 100%;
+                
+            }
+    
+        </style>
+
+        <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+            
+        <div id="mainContainer">
+            <div id="commands">
+                <input type="text" id="location" placeholder="Write any location...">
+                <div class="addLocation btn">Add Location</div>
+                <div class="zoomIn btn">Zoom In</div>
+                <div class="zoomOut btn">Zoom Out</div>
+                <div class="Remove btn">Remove</div>
+                <select name="locations" id="locations">
+                    <option class="current"></option>
+                </select>
+            </div>
+            <div id="map">
+            
+            </div>
+            
+        </div>
+            
+        <script>
+
+            var map;
+
+            function initMap() {
+
+                let startPosition = { lat : -34.397, lng : 150.644 };
+
+                map = new google.maps.Map(document.getElementById('map'),
+                { center : startPosition , zoom : 8});
+
+                var geocoder = new google.maps.Geocoder();
+                var location = 'New York, USA';
+
+                geocoder.geocode({'address' : location },
+                    function (results, status) {
+                        if ( status = google.maps.GeocoderStatus.OK) {
+                            let lat = results[0].geometry.location.lat();
+                            let lng = results[0].geometry.location.lng();
+
+                            var newMarker = new google.maps.Marker({
+                                position : { lat :  lat, lng : lng},
+                                map : map,
+                                title : location
+                            });
+
+                            map.setCenter({lat : lat, lng : lng});
+
+                        }
+                    });
+                        
+                            
+            }
+
+        </script>
+
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPL5FbwKVlLkZL0quNPnsi3dOpK-d59Ko&callback=initMap">
+        </script>
+        
+        <script type="text/javascript">
+            document.write('<scr'+ 'ipt src= "main.js?' + Math.random()+'" type="text/javascript"></scr' + 'ipt');    
+        </script>
+
+    
+    </body>
+</html>

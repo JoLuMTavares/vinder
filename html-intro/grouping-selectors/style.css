@@ -1,0 +1,39 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: beige;
+    background-color: #4d2d06;
+    font-size: 3em;
+}
+
+.primary-box {
+    background-color: #222;
+    color: #eee;
+    
+
+}
+
+.secondary-box {
+    background-color: #34C;
+    color: #C92;
+    
+
+}
+
+.primary-box, .secondary-box {
+    text-align: center;
+    font-size: 1.4em;
+    margin: 0 0 10px;
+    padding: 1%;
+}
+
+.inside-box h3, .inside-box p {
+    font-size: 1.1em;
+}
+
+/*
+.inside-box p {
+    font-size: 1.1em;
+}
+*/
+
+

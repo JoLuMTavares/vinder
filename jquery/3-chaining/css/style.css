@@ -1,0 +1,68 @@
+table, th, td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.indent {
+    padding: 2px 8px;
+    margin: 2px 8px;
+}
+
+.even-row {
+    background-color: blue;
+}
+
+.odd-row {
+    background-color: yellow;
+}
+
+.highlight {
+    background-color: darkkhaki;
+}
+
+.highlight-2 {
+    font-weight: bold;
+    color: red;
+}
+
+.red-color {
+    color: #de1515;
+}
+
+
+.blue-color {
+    color: cornflowerblue;
+}
+
+.green-color {
+    color: seagreen;
+}
+
+.golden-color {
+    color: goldenrod;
+}
+
+.golden-background {
+    background-color: gold;
+}
+
+.blue-purple {
+    color: rgb(41, 24, 139);
+}
+
+.border {
+    padding: 10px;
+    border: solid 1px seagreen;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.slider {
+    display: none;
+    width: 100%;
+    height: 200px;
+    background-color: royalblue;
+}

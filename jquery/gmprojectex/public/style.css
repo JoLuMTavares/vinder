@@ -1,0 +1,68 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#mainContainer {
+    position: relative;
+    height: 100%;
+}
+
+#map {
+    height: 100%;
+    
+}
+
+
+#commands {
+    /* margin-top: 1%; */
+    margin-left: 15%;
+    background-color: rgba(50, 50, 50);
+    width: 1000px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    vertical-align: center;
+    /* opacity: 0.01; */
+    /* position: fixed; */
+}
+
+#commands:hover {
+    opacity: 1;
+}
+
+#location {
+    margin: 1% 0 0 1%;
+    width: 300px;
+    height: 25px;
+}
+
+.btn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    background-color: grey;
+    color: #000;
+    height: 22.5px;
+    margin: 1%;
+    padding: 0.5%;
+    vertical-align: center;
+}
+
+.btn:hover {
+    background-color: darkgrey;
+    cursor: pointer;
+}
+
+#locations {
+    margin-top: 1%;
+    height: 32.5px;
+    background-color: grey;
+    outline: none;
+    border: none;
+}
+
+#locations:hover {
+    cursor: pointer;
+    background-color: darkgrey;
+}

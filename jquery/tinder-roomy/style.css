@@ -1,0 +1,55 @@
+/*Global*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  /*Header*/
+  
+  .card-header {
+    background-color: #8c8cf3;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 550;
+  }
+  
+  /*Main*/
+  
+  .card-subtitle {
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    color: black;
+  }
+  
+  .card-body {
+    padding: 2rem;
+    background-color: #fbfbfb;
+  }
+  /*Footer*/
+  
+  .card-footer {
+    background-color: #e9ecef;
+  }
+  
+  .d-flex {
+    padding: 0 4rem;
+  }
+  
+  .card-link {
+    font-weight: 600;
+    border: 2px #8c8cf3 solid;
+    border-radius: 4px;
+    color: #8c8cf3;
+  }
+  
+  .card-link:hover {
+    color: black;
+  }
+  

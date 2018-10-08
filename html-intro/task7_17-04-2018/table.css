@@ -1,0 +1,56 @@
+body {
+    background: radial-gradient(rgb(255, 131, 74), red, darkred); 
+    background-image: url("image/1992_Ferrari 512_TR.jpg");
+}
+
+.backgroundImage {
+    background-image: url("image/ferrari-f12-tdf-2015-finali-mondiali_100533186_h.jpg");
+    background-repeat: no-repeat;
+    
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    border: 4px solid beige;
+    position: relative;
+    margin: auto;
+}
+
+tr {
+    border: 4px solid beige;
+}
+
+th {
+    border: 2px solid red;
+    border-radius: 8px;
+    color: red;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+
+td {
+    background-image: url("image/1992_Ferrari 512_TR.jpg");
+    background-repeat: no-repeat;
+    object-fit: cover;    
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4em;
+    text-align: center;
+    width: 150px;
+    height: 100px;
+    opacity: 0.6;
+    font-weight: bold;
+    border: 3px solid black;
+    text-shadow: 2px 2px #000000;
+    
+}
+
+.Desc {
+    background-color: darkred;
+}
+

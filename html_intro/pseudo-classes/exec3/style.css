@@ -1,0 +1,88 @@
+/* THIS is where youre styles will be: */
+
+
+
+
+
+
+/* IGNORE: Styling for readability and remo purposes only
+-------------------------------------------------------------*/
+
+body {
+  margin: 1rem 1rem 4rem 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #0099cc;
+}
+
+h2 {
+  margin: 1.5rem 0;
+  font-size: 1.75rem;
+  color: #555555;
+}
+
+p {
+  font-size: 1.15rem;
+  color: #333333;
+}
+
+.color {
+  display: inline-block;
+  width: 150px;
+  padding: 2px;
+  border: 1px solid #c0c0c0;
+}
+
+  .color-demo {
+    width: 100%;
+    height: 30px;
+    margin: 0 auto;
+  }
+
+  .color-value {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    border-top: 1px solid #c0c0c0;
+    margin-top: 2px;
+  }
+
+  #table1, #table2 {
+      font-family: 'Times New Roman', Times, serif;
+  }
+
+  #table1 td {
+      padding: 0.5rem 1rem;
+      border-left: 4px solid #c0c0c0;
+  }
+
+  #table1 tr:nth-child(2n) td:first-child {
+    border-left: 4px solid #449d45;
+  }
+
+  #table1 tr:nth-child(2n+1) td:first-child {
+    border-left: 4px solid #cc181b;
+  }
+
+  #table2 th {
+      background-color: #888;
+      color: #fff;
+      padding: 0.4rem 1rem 0.4rem 0.6rem;
+      text-align: left;
+  }
+
+  #table2 td {
+    background-color: #c0c0c0;
+    padding: 0.8rem;
+  }
+
+  #table2 tr:nth-child(2n+1) td {
+      background-color: #efefef;
+  }
+
+#table2 tr:nth-child(3n+4) td:nth-child(2) {
+    background-color: #ffbbbb;
+}
+

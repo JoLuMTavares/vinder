@@ -1,0 +1,86 @@
+body {
+    background: radial-gradient(darkblue, lightblue, skyblue);
+}
+
+div#container {
+    background-color: royalblue;
+}
+
+#header {
+    background-color: darkblue;
+}
+
+#header h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: silver;
+    font-size: 3em;
+    text-align: center;
+    padding: 2%;
+}
+
+#header p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.6em;
+    padding: 1.5%;
+}
+
+.blog-post {
+    
+    background: linear-gradient(black, navy, royalblue);
+}
+
+.blog-post p {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    color: darkblue;
+    text-align: center;
+    padding-top: 2%;
+}
+
+p, em, #footer p {
+    margin-top: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    color: silver;
+}
+
+p:last-child {
+    color: darkgrey;
+    background-color: darkslategray;
+}
+
+em {
+    margin-left: 2%;
+    color: rgb(17, 17, 77);
+}
+
+strong {
+    color: darkgoldenrod;
+}
+
+#footer {
+    background-color: darkblue;
+}
+
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.6em;
+    font-style: italic;
+    margin-left: 2%;
+}
+
+#footer p {
+    text-align: center;
+}
+
+
+
+
+
+

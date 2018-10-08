@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+    
+}
+
+#container {
+    width: 960px;
+    margin: 0 auto;
+    float: left;
+}
+
+#header {
+    background-color: #fff;
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+#content {
+    width: 660px;
+    background-color: #fff;
+    float: left;
+}
+
+#navigation {
+    width: 300px;
+    float: left;
+
+}
+
+a {
+    display: block;
+}
+
+#footer {
+    clear: both;
+}

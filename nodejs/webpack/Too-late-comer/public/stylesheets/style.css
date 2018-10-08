@@ -1,0 +1,27 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#addLateComerForm {
+  margin-top: 1%;
+  display: inline-flex;
+}
+
+#elementName, #elementDate, #elementTime {
+  width: 200px;
+  margin-right: 2%;
+}
+
+/* The table from latecomers page */
+#late-comers-table th, td{
+  text-align: center;
+  padding: 1%;
+  /* margin-left: 10px; */
+  margin-right: 10px;
+  width: 5%;
+}

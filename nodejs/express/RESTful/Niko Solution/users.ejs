@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="assets/style.css" type="text/css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $("tr").delegate(".deleteBtn", "click",function(){
+        // let id = $(this).attr('for');
+        // alert(id);
+        $(this).parent().remove(); // nemer version
+
+        $.ajax({
+          type: "DELETE",
+          url:"http://localhost:3000/delete/" + $(this).attr('for'),
+          success: function(result){
+            if (result.error){
+              console.log(result.error);
+            }
+            else {
+              console.log(result.success);
+            }
+          }
+        });
+      });
+    });
+    </script>
+  </head>
+  <body>
+    <h1>Users</h1>
+
+    <table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Password</th>
+    <th>Profession</th>
+    <th>Action</th>
+  </tr>
+
+    <% users.forEach( user => { %>
+    <tr>
+    <td><%= user.id %></td>
+    <td><%= user.name %></td>
+    <td><%= user.password %></td>
+    <td><%= user.profession %></td>
+    <td class="deleteBtn" for="<%= user.id %>">Delete</td>
+    </tr>
+    <% }); %>
+
+</table>
+  </body>
+</html>

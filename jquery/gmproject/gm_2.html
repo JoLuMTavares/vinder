@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Google Maps 2</title>
+    <style>
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #map {
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="map">
+
+    </div>
+
+    <script>
+
+        var map;
+
+        function initMap() {
+
+            let startPosition = { lat : -34.397, lng : 150.644 };
+
+            map = new google.maps.Map(document.getElementById('map'),
+            { center : startPosition , zoom : 8});
+
+          
+
+
+            var marker1 = new google.maps.Marker({
+
+                position : startPosition,
+                map : map,
+                title : 'Australia'
+
+            });
+
+            /*
+                Task: Create a second marker that is a bit more eastern
+                than marker 1.
+            */
+
+            var marker2 = new google.maps.Marker({
+
+                position : { lat: startPosition.lat, lng : startPosition.lng + 20 },
+                map : map,
+                title : 'A second marker, closer to New Zeland'
+
+            });
+
+            // Deleting a marker
+            marker2.setMap(null);
+
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPL5FbwKVlLkZL0quNPnsi3dOpK-d59Ko&callback=initMap"></script>
+</body>
+</html>

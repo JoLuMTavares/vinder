@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"  href="libraries/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+    <title>Bootstrap Grid</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Bootstrap Grid Example</h1>
+        <div class="row">
+            <div class="col-4 yellow">4</div>
+            <div class="col-4 yellow">4</div>
+            <div class="col-4 yellow">4</div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4 black">4 sm</div>
+            <div class="col-sm-4 black">4 sm</div>
+            <div class="col-sm-4 black">4 sm</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 light-silver">4 md</div>
+            <div class="col-md-4 light-silver">4 md</div>
+            <div class="col-md-4 light-silver">4 md</div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 silver">4 lg</div>
+            <div class="col-lg-4 silver">4 lg</div>
+            <div class="col-lg-4 silver">4 lg</div>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-4 dark-grey">4 xl</div>
+            <div class="col-xl-4 dark-grey">4 xl</div>
+            <div class="col-xl-4 dark-grey">4 xl</div>
+        </div>
+
+        <h3>Three Equal Columns</h3>
+
+        <div class="row">
+            <div class="col-md-4">4 md</div>
+            <div class="col-md-4">4 md</div>
+            <div class="col-md-4">4 md</div>
+        </div>
+
+        <h3>Three Unequal Columns</h3>
+
+        <div class="row">
+            <div class="col-md-6">6 md</div>
+            <div class="col-md-4">4 md</div>
+            <div class="col-md-2">2 md</div>
+        </div>
+
+        <h3>Two Columns</h3>
+
+        <div class="row">
+            <div class="col-md-8">8 md</div>
+            <div class="col-md-4">4 md</div>
+        </div>
+
+
+        <h3>Full width, single column</h3>
+
+        <div class="row">
+            <p class="text-warning">No grid classes are necessary for full-width elements.</p>
+        </div>
+
+        <h3>Two columns with nested columns</h3>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        md 6
+                    </div>
+                    <div class="col-md-6">
+                        md 6
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    md 4    
+                </div>
+            </div>
+        </div>
+
+        <h3>Mixed: mobile and desktop</h3>
+
+        <div class="row">
+            <div class="col-12 col-md-8">12 md and 8 md</div>
+            <div class="col-6 col-md-4">6 md</div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 col-md-4">6 and md 4</div>
+            <div class="col-6 col-md-4">6 and md 4</div>
+            <div class="col-6 col-md-4">6 and md 4</div>
+        </div>
+
+        <h3>Mixed: mobile, tablet and desktop</h3>
+
+        <div class="row">
+            <div class="col-12 col-sm-6">12 and sm 6</div>
+            <div class="col-6">col-6</div>
+        </div>
+
+        <h3>Offset</h3>
+
+        <div class="row">
+            <div class="col-sm-5 col-md-6">sm 5 and md 6</div>
+            <div class="col-sm-5 offset-sm-2">sm 5</div>
+        </div>
+
+    </div>
+        
+       
+    
+</body>
+</html>

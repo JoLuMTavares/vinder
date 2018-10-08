@@ -1,0 +1,61 @@
+.box {
+    height: 100px;
+    width: 250px;
+    vertical-align: middle;
+    text-align: center;
+    border: solid 1px gray;
+    margin: 2px 0px;
+    font-size: 20px;
+}
+
+
+.link {
+    display: inline-block;
+    height: 34px;
+    width: 300px;
+    vertical-align: middle;
+    text-align: center;
+    border: solid 1px lightgreen;
+    color: green;
+    cursor: pointer;
+    margin: 2px 0px;
+    line-height: 34px;
+}
+
+.link:hover {
+    border: solid 1px darkgreen;
+    color: darkolivegreen;
+}
+
+.text {
+    font-family:  sans-serif;
+    font-size: 44px;
+    color: #de1515;
+    opacity: 1.0;
+    margin-top: 10px;
+    position: absolute;
+    left: 30%;
+}
+
+.no-queue {
+    left: 100px;
+    top: 100px;
+}
+
+.queue {
+    left: 100px;
+    top: 200px;
+}
+
+.queue-again {
+    left: 100px;
+    top: 300px;
+}
+
+.highlight {
+    color: deepskyblue;
+}
+
+.darkening {
+    color: #000;
+}
